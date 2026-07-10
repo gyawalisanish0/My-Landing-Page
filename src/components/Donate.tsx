@@ -7,14 +7,14 @@ const donateOptions = [
 export default function Donate() {
   return (
     <section className="section" id="support">
-      <h2 className="section-title">Support the work</h2>
+      <h2 className="section-title section-title-gold">Support the work</h2>
       <p>
         Domain AI and Genesis Infinity are built and tested on a single phone, on my own time.
         If any of this is useful to you, a donation helps keep it going.
       </p>
       <div className="donate-row">
         {donateOptions.map((d) => (
-          <a className="btn btn-ghost" href={d.href} key={d.name}>
+          <a className="btn btn-gold" href={d.href} key={d.name}>
             {d.name}
           </a>
         ))}
