@@ -8,12 +8,12 @@ export const profile = {
 }
 
 export const socialLinks = [
-  { name: 'GitHub', href: profile.github },
-  { name: 'X', href: 'https://x.com/GENUIS_SANISH' },
-  { name: 'TikTok', href: 'https://tr.ee/oiXw18xgid' },
-  { name: 'YouTube', href: 'https://tr.ee/yWWc6k5yT9' },
-  { name: 'Linktree', href: 'https://linktr.ee/sanishgyawali' },
-]
+  { name: 'GitHub', href: profile.github, icon: 'GitHub' },
+  { name: 'X', href: 'https://x.com/GENUIS_SANISH', icon: 'X' },
+  { name: 'TikTok', href: 'https://tr.ee/oiXw18xgid', icon: 'TikTok' },
+  { name: 'YouTube', href: 'https://tr.ee/yWWc6k5yT9', icon: 'YouTube' },
+  { name: 'Linktree', href: 'https://linktr.ee/sanishgyawali', icon: 'Linktree' },
+] as const
 
 export const workflow = [
   'Claude Code / Codex for AI-assisted development',
@@ -93,9 +93,5 @@ export const otherWork = [
     name: 'KRYSTAL',
     description:
       'Retro games modding brand, with its own identity — a faceted crystal "K" in purple/violet.',
-  },
-  {
-    name: 'Content creation',
-    description: 'TikTok, 11k+ followers, and recently started on YouTube.',
   },
 ]

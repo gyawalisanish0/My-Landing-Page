@@ -303,9 +303,25 @@ ol {
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 18px;
   font-family: var(--font-mono);
   font-size: 0.9rem;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent-bright);
+}
+
+.footer-links a svg {
+  flex-shrink: 0;
 }
 
 .footer-note {
