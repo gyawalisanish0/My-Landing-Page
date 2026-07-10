@@ -1,9 +1,8 @@
 import Reveal from './Reveal'
 
 const donateOptions = [
-  { name: 'Buy Me a Coffee', href: '#' },
-  { name: 'GitHub Sponsors', href: '#' },
   { name: 'Ko-fi', href: 'https://ko-fi.com/sanishgyawali' },
+  { name: 'GitHub Sponsors', href: '#' },
 ]
 
 export default function Donate() {
@@ -29,7 +28,7 @@ export default function Donate() {
           )
         })}
       </Reveal>
-      <p className="donate-note">Buy Me a Coffee and GitHub Sponsors links coming soon.</p>
+      <p className="donate-note">GitHub Sponsors link coming soon.</p>
     </section>
   )
 }
