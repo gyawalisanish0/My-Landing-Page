@@ -7,6 +7,14 @@ export const profile = {
   email: 'gyawalisanish0@gmail.com',
 }
 
+export const socialLinks = [
+  { name: 'GitHub', href: profile.github },
+  { name: 'X', href: 'https://x.com/GENUIS_SANISH' },
+  { name: 'TikTok', href: 'https://tr.ee/oiXw18xgid' },
+  { name: 'YouTube', href: 'https://tr.ee/yWWc6k5yT9' },
+  { name: 'Linktree', href: 'https://linktr.ee/sanishgyawali' },
+]
+
 export const workflow = [
   'Claude Code / Codex for AI-assisted development',
   'GitHub, via Chrome',
