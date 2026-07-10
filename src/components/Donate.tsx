@@ -3,7 +3,7 @@ import Reveal from './Reveal'
 const donateOptions = [
   { name: 'Buy Me a Coffee', href: '#' },
   { name: 'GitHub Sponsors', href: '#' },
-  { name: 'Ko-fi', href: '#' },
+  { name: 'Ko-fi', href: 'https://ko-fi.com/sanishgyawali' },
 ]
 
 export default function Donate() {
@@ -15,13 +15,21 @@ export default function Donate() {
         If any of this is useful to you, a donation helps keep it going.
       </p>
       <Reveal className="donate-row">
-        {donateOptions.map((d) => (
-          <a className="btn btn-gold" href={d.href} key={d.name}>
-            {d.name}
-          </a>
-        ))}
+        {donateOptions.map((d) => {
+          const isLive = d.href !== '#'
+          return (
+            <a
+              className="btn btn-gold"
+              href={d.href}
+              key={d.name}
+              {...(isLive ? { target: '_blank', rel: 'noreferrer' } : {})}
+            >
+              {d.name}
+            </a>
+          )
+        })}
       </Reveal>
-      <p className="donate-note">Links coming soon.</p>
+      <p className="donate-note">Buy Me a Coffee and GitHub Sponsors links coming soon.</p>
     </section>
   )
 }
