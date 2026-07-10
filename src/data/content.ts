@@ -52,6 +52,7 @@ export type Project = {
   details: string[]
   meta?: string
   tags: string[]
+  repo?: string
 }
 
 export const flagshipProjects: Project[] = [
@@ -69,6 +70,7 @@ export const flagshipProjects: Project[] = [
     ],
     meta: 'Package: sg.act.domain',
     tags: ['Android', 'Kotlin', 'llama.cpp', 'GGUF', 'On-device AI'],
+    repo: 'https://github.com/gyawalisanish0/domain-ai',
   },
   {
     id: 'genesis-infinity',
@@ -85,6 +87,7 @@ export const flagshipProjects: Project[] = [
       'Working demo: combat resolves through structured tool calls, not freeform narration',
     ],
     tags: ['TypeScript', 'Phaser', 'Game AI', 'State machines'],
+    repo: 'https://github.com/gyawalisanish0/genesis-infinity',
   },
 ]
 

@@ -1,4 +1,6 @@
 import { profile, workflow, techStack, interests, goals } from '../data/content'
+import Reveal from './Reveal'
+import TagRow from './TagRow'
 
 export default function About() {
   return (
@@ -9,24 +11,20 @@ export default function About() {
         everything here is built entirely from an Android phone, no PC or laptop involved.
       </p>
 
-      <div className="card">
+      <Reveal className="card">
         <h3 className="card-subtitle">Workflow</h3>
         <ol className="pipeline">
           {workflow.map((step) => (
             <li key={step}>{step}</li>
           ))}
         </ol>
-      </div>
+      </Reveal>
 
-      <div className="tag-row">
-        {techStack.map((t) => (
-          <span className="tag" key={t}>
-            {t}
-          </span>
-        ))}
-      </div>
+      <Reveal delay={100}>
+        <TagRow tags={techStack} />
+      </Reveal>
 
-      <div className="about-grid">
+      <Reveal className="about-grid" delay={200}>
         <div>
           <h3 className="card-subtitle">Also into</h3>
           <ul className="plain-list">
@@ -43,7 +41,7 @@ export default function About() {
             ))}
           </ul>
         </div>
-      </div>
+      </Reveal>
     </section>
   )
 }

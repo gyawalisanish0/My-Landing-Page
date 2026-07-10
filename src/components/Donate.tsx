@@ -1,3 +1,5 @@
+import Reveal from './Reveal'
+
 const donateOptions = [
   { name: 'Buy Me a Coffee', href: '#' },
   { name: 'GitHub Sponsors', href: '#' },
@@ -12,13 +14,13 @@ export default function Donate() {
         Domain AI and Genesis Infinity are built and tested on a single phone, on my own time.
         If any of this is useful to you, a donation helps keep it going.
       </p>
-      <div className="donate-row">
+      <Reveal className="donate-row">
         {donateOptions.map((d) => (
           <a className="btn btn-gold" href={d.href} key={d.name}>
             {d.name}
           </a>
         ))}
-      </div>
+      </Reveal>
       <p className="donate-note">Links coming soon.</p>
     </section>
   )
