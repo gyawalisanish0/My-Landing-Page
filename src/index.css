@@ -72,6 +72,17 @@ ol {
   padding: 64px 0 40px;
 }
 
+.hero-avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.15), 0 8px 24px rgba(139, 92, 246, 0.25);
+  margin-bottom: 20px;
+}
+
 .hero-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -296,6 +307,11 @@ ol {
 
   .hero h1 {
     font-size: 2.75rem;
+  }
+
+  .hero-avatar {
+    width: 128px;
+    height: 128px;
   }
 
   .hero-tagline {
