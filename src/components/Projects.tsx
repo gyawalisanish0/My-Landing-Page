@@ -12,17 +12,30 @@ export default function Projects() {
           <Reveal as="article" className="project-card" key={p.id} delay={i * 120}>
             <div className="project-card-header">
               <h3>{p.name}</h3>
-              {p.repo && (
+              {p.demo ? (
                 <a
                   className="project-repo-link"
-                  href={p.repo}
+                  href={p.demo}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={`${p.name} on GitHub`}
+                  aria-label={`Play ${p.name} on Vercel`}
                 >
-                  <icons.GitHub />
-                  Repo
+                  <icons.Vercel />
+                  Play
                 </a>
+              ) : (
+                p.repo && (
+                  <a
+                    className="project-repo-link"
+                    href={p.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${p.name} on GitHub`}
+                  >
+                    <icons.GitHub />
+                    Repo
+                  </a>
+                )
               )}
             </div>
             <p className="project-tagline">{p.tagline}</p>
