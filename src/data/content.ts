@@ -89,6 +89,21 @@ export const flagshipProjects: Project[] = [
     tags: ['TypeScript', 'Phaser', 'Game AI', 'State machines'],
     repo: 'https://github.com/gyawalisanish0/Genesis_Infinity',
   },
+  {
+    id: 'interactio',
+    name: 'InterActio',
+    tagline: 'Immersive web puzzle game (React Three Fiber)',
+    description:
+      'A sequence of self-contained 2D and 3D puzzle stages plugged into a small shared engine — each stage its own world, stitched together by one router.',
+    details: [
+      'Layered module architecture: stages depend on mechanics depend on core, dependencies only point downward — a stage can be deleted by removing its folder and one registration line',
+      '3D stages via Three.js (react-three-fiber, drei); 2D stages stay plain DOM/CSS — render mode is declared per stage, never forced',
+      'One shared store (zustand) for cross-stage state; no router framework — the stage registry is the router',
+      'Live stages so far: a main menu and "The Cipher," a decryption puzzle with procedural audio and grouped-reveal dialogue',
+    ],
+    tags: ['TypeScript', 'React', 'Three.js', 'Vite'],
+    repo: 'https://github.com/gyawalisanish0/InterActio',
+  },
 ]
 
 export const otherWork = [
