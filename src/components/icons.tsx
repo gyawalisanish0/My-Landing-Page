@@ -85,6 +85,9 @@ export const icons = {
       {...props}
     />
   ),
+  Vercel: (props: SVGProps<SVGSVGElement>) => (
+    <Icon path="m12 1.608 12 20.784H0Z" {...props} />
+  ),
 }
 
 export type IconName = keyof typeof icons

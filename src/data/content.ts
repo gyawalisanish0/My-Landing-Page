@@ -53,6 +53,7 @@ export type Project = {
   meta?: string
   tags: string[]
   repo?: string
+  demo?: string
 }
 
 export const flagshipProjects: Project[] = [
@@ -102,7 +103,7 @@ export const flagshipProjects: Project[] = [
       'Live stages so far: a main menu and "The Cipher," a decryption puzzle with procedural audio and grouped-reveal dialogue',
     ],
     tags: ['TypeScript', 'React', 'Three.js', 'Vite'],
-    repo: 'https://github.com/gyawalisanish0/InterActio',
+    demo: 'https://inter-actio.vercel.app/',
   },
 ]
 
