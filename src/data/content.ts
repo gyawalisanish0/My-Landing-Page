@@ -105,6 +105,22 @@ export const flagshipProjects: Project[] = [
     tags: ['TypeScript', 'React', 'Three.js', 'Vite'],
     demo: 'https://inter-actio.vercel.app/',
   },
+  {
+    id: 'usr',
+    name: 'USR',
+    tagline: 'Deterministic soccer match engine + live birds-eye viewer',
+    description:
+      'Ultimate Soccer Revolution — a soccer sim built mechanic by mechanic: data-driven attributes and match rules, seeded determinism, and a real-time Canvas viewer that only ever consumes the engine.',
+    details: [
+      'Pure engine core (src/engine/) — no I/O, no rendering; takes teams, tactics, and a seed in, returns final score, an ordered event log, and match stats out',
+      'Fully deterministic: same input + same seed always produces the same output, computed on a fixed internal timestep independent of wall-clock playback speed',
+      'Full match-rules layer: shooting, restarts, fouls and cards, offside, marking and closing-down, manager AI, substitutions, and fatigue',
+      'Data-driven: a read-only JSON database of real player and team data drives end-to-end simulations, loaded independently of the pure engine',
+      'Birds-eye Canvas viewer watches matches live in real time, built on the same engine — every bug it surfaced was a real engine bug, not a rendering one',
+    ],
+    tags: ['TypeScript', 'Node.js', 'Vite', 'Vitest'],
+    demo: 'https://usr-iota.vercel.app/',
+  },
 ]
 
 export const otherWork = [
