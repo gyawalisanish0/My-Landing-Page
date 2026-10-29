@@ -7,12 +7,14 @@ export default function About() {
     <section className="section" id="about">
       <h2 className="section-title">About</h2>
       <p>
-        {profile.age}, based in {profile.location}. Self-taught, no formal CS background —
-        everything here is built entirely from an Android phone, no PC or laptop involved.
+        {profile.age}, based in {profile.location}. Systems and software developer focused on building
+        deterministic state engines, private on-device LLM architectures, and autonomous agent orchestration.
+        Every core architecture here was designed with strict resource discipline, explicit trust boundaries,
+        and zero-hallucination verification.
       </p>
 
       <Reveal className="card">
-        <h3 className="card-subtitle">Workflow</h3>
+        <h3 className="card-subtitle">Workflow & Engineering Discipline</h3>
         <ol className="pipeline">
           {workflow.map((step) => (
             <li key={step}>{step}</li>
@@ -26,7 +28,7 @@ export default function About() {
 
       <Reveal className="about-grid" delay={200}>
         <div>
-          <h3 className="card-subtitle">Also into</h3>
+          <h3 className="card-subtitle">Focus Areas</h3>
           <ul className="plain-list">
             {interests.map((i) => (
               <li key={i}>{i}</li>
@@ -34,7 +36,7 @@ export default function About() {
           </ul>
         </div>
         <div>
-          <h3 className="card-subtitle">Long-term goals</h3>
+          <h3 className="card-subtitle">Current Goals</h3>
           <ul className="plain-list">
             {goals.map((g) => (
               <li key={g}>{g}</li>

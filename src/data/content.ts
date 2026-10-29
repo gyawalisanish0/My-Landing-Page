@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Sanish Gyawali',
-  tagline: 'Self-taught developer building AI systems and games — entirely from a phone.',
+  tagline: 'Systems Engineer specializing in deterministic simulation engines, on-device edge AI, and autonomous agent infrastructure.',
   location: 'Sainamaina, Rupandehi, Nepal',
   age: 22,
   github: 'https://github.com/gyawalisanish0',
@@ -16,32 +16,37 @@ export const socialLinks = [
 ] as const
 
 export const workflow = [
-  'Claude Code / Codex for AI-assisted development',
-  'GitHub, via Chrome',
-  'GitHub Actions for CI/CD',
-  'On-device testing',
+  'Multi-agent orchestration & custom tooling via Google Antigravity',
+  'Local on-device inference via llama.cpp (GGUF / arm64 / AVX2)',
+  'Zero-hallucination verification & tri-state deterministic state machines',
+  'Automated test suites & CI/CD with GitHub Actions',
 ]
 
 export const techStack = [
   'TypeScript',
-  'React',
-  'Phaser',
+  'Python',
+  'React / Next.js',
+  'C++ / Android NDK',
   'Kotlin',
-  'Android toolchain',
-  'GitHub Actions',
   'llama.cpp / GGUF',
+  'Phaser / Three.js',
+  'Agent Architecture',
+  'Prisma / SQL',
+  'GitHub Actions',
 ]
 
 export const interests = [
+  'Deterministic state engines & simulation',
+  'AI safety, red-teaming & hallucination auditing',
+  'Local edge intelligence & privacy-first computing',
   'Chess (developing player)',
-  'Sci-fi / dark fantasy worldbuilding',
-  'Content creation',
 ]
 
 export const goals = [
-  'Launch an indie game studio',
+  'Architect production-grade agentic & simulation systems',
+  'Join or consult for forward-thinking engineering teams',
   'Build AI-integrated accessibility tools',
-  'Grow a tech community in Nepal',
+  'Grow an engineering community in Nepal',
 ]
 
 export type Project = {
@@ -58,6 +63,21 @@ export type Project = {
 
 export const flagshipProjects: Project[] = [
   {
+    id: 'everything-antigravity',
+    name: 'Everything Antigravity',
+    tagline: 'Autonomous agent orchestration toolkit & rules for Google Antigravity',
+    description:
+      'Adapted and ported from the battle-tested Everything Claude Code (ECC) architecture for Google Antigravity — featuring 310+ modular skills, 70+ autonomous subagents, and strict execution guardrails.',
+    details: [
+      '310+ modular skills covering TDD, system architecture, database optimization, and security audits',
+      '70+ specialized autonomous subagent personas with defined system boundaries and tool access',
+      'Engineering rules and automation pipelines tailored specifically for Google Antigravity',
+      'Enforces strict pre-edit planning, adversarial auditing, and automated verification before code changes',
+    ],
+    tags: ['Agent Architecture', 'Google Antigravity', 'Python', 'Automation', 'Workflow'],
+    repo: 'https://github.com/gyawalisanish0/Everything_Antigravity',
+  },
+  {
     id: 'domain-ai',
     name: 'Domain AI',
     tagline: 'Local-first, fully offline Android AI assistant',
@@ -65,12 +85,12 @@ export const flagshipProjects: Project[] = [
       'Runs Gemma and DeepSeek models on-device via llama.cpp — zero cloud calls.',
     details: [
       'On-device inference: Gemma and DeepSeek models via llama.cpp, no cloud dependency',
-      'AES-256 encryption for stored data',
-      'Network kill switch',
-      'Built-in PII redaction',
+      'AES-256 encryption for stored data keyed to Android Keystore',
+      'Hardware network kill switch at an auditable chokepoint',
+      'Automatic PII redaction (phones, emails, identifiers) before any cloud call',
     ],
     meta: 'Package: sg.act.domain',
-    tags: ['Android', 'Kotlin', 'llama.cpp', 'GGUF', 'On-device AI'],
+    tags: ['Android', 'Kotlin', 'C++', 'llama.cpp', 'GGUF', 'Edge AI'],
     repo: 'https://github.com/gyawalisanish0/DomainAI',
   },
   {
@@ -87,23 +107,8 @@ export const flagshipProjects: Project[] = [
       'Reuses the same single, auditable policy-core pattern as Domain AI',
       'Working demo: combat resolves through structured tool calls, not freeform narration',
     ],
-    tags: ['TypeScript', 'Phaser', 'Game AI', 'State machines'],
+    tags: ['TypeScript', 'Phaser', 'Game AI', 'State machines', 'AI Safety'],
     repo: 'https://github.com/gyawalisanish0/Genesis_Infinity',
-  },
-  {
-    id: 'interactio',
-    name: 'InterActio',
-    tagline: 'Immersive web puzzle game (React Three Fiber)',
-    description:
-      'A sequence of self-contained 2D and 3D puzzle stages plugged into a small shared engine — each stage its own world, stitched together by one router.',
-    details: [
-      'Layered module architecture: stages depend on mechanics depend on core, dependencies only point downward — a stage can be deleted by removing its folder and one registration line',
-      '3D stages via Three.js (react-three-fiber, drei); 2D stages stay plain DOM/CSS — render mode is declared per stage, never forced',
-      'One shared store (zustand) for cross-stage state; no router framework — the stage registry is the router',
-      'Live stages so far: a main menu and "The Cipher," a decryption puzzle with procedural audio and grouped-reveal dialogue',
-    ],
-    tags: ['TypeScript', 'React', 'Three.js', 'Vite'],
-    demo: 'https://inter-actio.vercel.app/',
   },
   {
     id: 'usr',
@@ -118,15 +123,35 @@ export const flagshipProjects: Project[] = [
       'Data-driven: a read-only JSON database of real player and team data drives end-to-end simulations, loaded independently of the pure engine',
       'Birds-eye Canvas viewer watches matches live in real time, built on the same engine — every bug it surfaced was a real engine bug, not a rendering one',
     ],
-    tags: ['TypeScript', 'Node.js', 'Vite', 'Vitest'],
+    tags: ['TypeScript', 'Node.js', 'Vite', 'Vitest', 'Simulation'],
     demo: 'https://usr-iota.vercel.app/',
+  },
+  {
+    id: 'interactio',
+    name: 'InterActio',
+    tagline: 'Immersive web puzzle game (React Three Fiber)',
+    description:
+      'A sequence of self-contained 2D and 3D puzzle stages plugged into a small shared engine — each stage its own world, stitched together by one router.',
+    details: [
+      'Layered module architecture: stages depend on mechanics depend on core, dependencies only point downward — a stage can be deleted by removing its folder and one registration line',
+      '3D stages via Three.js (react-three-fiber, drei); 2D stages stay plain DOM/CSS — render mode is declared per stage, never forced',
+      'One shared store (zustand) for cross-stage state; no router framework — the stage registry is the router',
+      'Live stages so far: a main menu and "The Cipher," a decryption puzzle with procedural audio and grouped-reveal dialogue',
+    ],
+    tags: ['TypeScript', 'React', 'Three.js', 'Vite', 'Zustand'],
+    demo: 'https://inter-actio.vercel.app/',
   },
 ]
 
 export const otherWork = [
   {
+    name: 'TaskFlow (agent-playground)',
+    description:
+      'Full-stack task management SaaS monorepo built with Next.js 14 App Router, Express.js layered architecture (middleware, controllers, services), Prisma ORM, and Zod validation schemas.',
+  },
+  {
     name: 'KRYSTAL',
     description:
-      'Retro games modding brand, with its own identity — a faceted crystal "K" in purple/violet.',
+      'Retro games modding brand with custom identity and runtime tooling.',
   },
 ]

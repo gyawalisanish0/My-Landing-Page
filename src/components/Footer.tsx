@@ -19,7 +19,7 @@ export default function Footer() {
           {profile.email}
         </a>
       </div>
-      <p className="footer-note">Built and shipped from an Android phone.</p>
+      <p className="footer-note">Designed & engineered by Sanish Gyawali · All systems built with strict architectural discipline.</p>
     </footer>
   )
 }
